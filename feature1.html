@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Test Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="jquery.js"></script>
+    <link href="testcss.css" rel="stylesheet" type="text/css"/>
+</head>
+<body >
+    <div class="container">
+    <div class="jumbotron border border-dark  bg-primary text-white row" id="header"> 
+        <h1 class="display-3" style="text-align: center;">Dream Academy</h1>
+        <p class="lead" style="text-align: center;">We aspire to share our knowledge and expertise to young aspirants of CDS, NDA and CUET.</p>
+      </div>
+        <div class="main">
+        <div class="row" >   <!--If we use add a class row-col-2 with the row class then there will be 2 cols in every row-->
+            <div class="col-12" id="menu">
+            <ul>
+            <li><a href="#">Home</a></li>
+            <!--div class="w-100"></div this line will add a break between cols like there will be  two cols in one group and there will be thre cols belos it-->
+            <li class="offset-md-2"><a href="#">Packages</a></li><!--we use offset class to  create some space before current col class like here offset-md-2 means it will create 2 col empty space before current class-->
+            <li class="offset-md-2"><a href="#">Gallery</a></li>
+            <li class="offset-md-2 order-first"><a href="#">Services</a></li>
+            <li class="offset-md-2"><a href="#">About us</a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="row">   
+            <div class="col-8" id="content">
+                Hello Aspirants, welcome to our page. Here we'll discusss our knowledge and expertise with you in clearing most prominant exams like cds and afcat. We will also held classes for cuet exam by clearing that you can get admission in any of your dream university like DU and JNU
+                <br>
+               <h2>Our top educators:</h2>
+               <div class="row">
+               <br>
+            <figure>
+            <img src="resources\11.jpg"  class="col-4" style="height: 450px; width: 350px; "/>
+            <img src="resources\22.jpg" class="col-4" style="height: 450px; width: 350px"/>
+            <pre>Mr. Shambhu Rai(B.Sc.(Maths)(DDU))            Mr. Avinash Mishra(M.A.(Political Science)(DU))</pre> 
+            </figure>
+            </div>
+            </div>
+            <div class="col-4" id="sidebar">
+                <iframe style="height: 650px; width:400px" src="https://www.youtube.com/embed/hJPknMwJe8s?autoplay=0&mute=1">
+                </iframe>
+            </div>
+        </div>
+        <div class="row" id="footer">
+            <div class="col-12">@copyright_message</div>
+        </div>
+        </div>  
+      </div>
+      <script>
+        $(document).ready(function(){
+            console.log($("#sidebar").innerWidth());
+        })
+      </script> 
+</body>
+</html>
